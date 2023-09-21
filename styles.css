@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+#container{
+	margin:20px;
+	position:relative;
+}
+
+#container::before{
+    content: "Er.";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute;
+}
+
+#container::after {
+    content: "(Software Engineer)";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute;
+}
+
+#container::before {
+    left: -25px; /* Adjust as needed for positioning */
+    top: 0;
+}
+
+
+#container::after {
+    right: -1px; /* Adjust as needed for positioning */
+    top: 0;
+}
